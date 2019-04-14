@@ -1,0 +1,52 @@
+/*
+Theme Name: Evento bike
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: Gregolly França
+Description: Tema criado para evento de bike
+Version: 1.0
+License: GNU General Public License v2 or later
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import 'normalize.css';
+@import 'reset.css';
+
+*{
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+  display: block;
+}
+li{
+  list-style: none;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.containfer-fluid{
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.justify{
+  justify-content: space-between;
+}
+.evenly{
+  justify-content: space-evenly;
+}
+.around{
+  justify-content: space-around;
+}
