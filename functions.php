@@ -47,6 +47,8 @@ add_theme_support('title-tag');
 //adicionando suporte aos widgets
 add_theme_support('customize-selective-refresh-widgets');
 
+add_theme_support('custom-header');
+
 //registrar menu
 add_action('init', 'evento_bike_tema_init');
 
@@ -54,3 +56,10 @@ function evento_bike_tema_init(){
 	register_nav_menu('primary', 'Menu Principal');
 }
 
+register_sidebar([
+	'name'			=> 'Barra Lateral (Sidebar)',
+	'id'			=> 'evento-bike-sidebar',
+	'description'	=> 'Área lateral sidebar evento-bike',
+	'before_title'	=> '<h4>',
+	'after_title'	=> '</h4>'
+]);

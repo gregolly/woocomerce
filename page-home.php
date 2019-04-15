@@ -13,7 +13,7 @@
         foreach( $myposts as $post ) : setup_postdata($post); 
     ?>
       <article class="article">
-        <?php the_post_thumbnail('large'); ?>
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
         <h2><?php the_title(); ?></h2>
         <?php the_excerpt(); ?>
         <?php the_date('d/m/y') ?>
