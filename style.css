@@ -10,8 +10,6 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-@import 'normalize.css';
-@import 'reset.css';
 
 *{
   box-sizing: border-box;
@@ -23,13 +21,19 @@ img{
 li{
   list-style: none;
 }
+a{
+  text-decoration: none;
+}
+html, body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .container{
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-.containfer-fluid{
+.container-fluid{
   max-width: 100%;
   margin: 0 auto;
   padding-left: 15px;
@@ -49,4 +53,186 @@ li{
 }
 .around{
   justify-content: space-around;
+}
+.header-interno{
+  position: relative;
+}
+.header-interno.banner-bg-interno{
+  width: 100%;
+  height: 600px;
+  background-image: url('img/1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.header-interno .banner-text-interno{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000000;
+}
+.header-interno .banner-text-interno p{
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+.header-interno .banner-text-interno h1{
+  font-size: 96px;
+  color: #fff;
+  line-height: 1.22;
+  margin-bottom: 70px;
+}
+.header-interno .banner-text-interno h1::after{
+  content: '';
+  display: block;
+  width: 500px;
+  height: 1px;
+  background-color: #fff;
+  margin: 5px auto;
+}
+.header-interno .banner-text-interno a{
+  color: #000;
+  background-color: #fff;
+  width: 200px;
+  height: 62px;
+  border-radius: 23px;
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.menu-interno{
+  background-color: #707070;
+  padding: 5px 0;
+}
+.menu-interno .container .row .navigation-interno ul{
+  display: flex;
+  flex-direction: wrap;
+}
+.menu-interno .navigation-interno ul li{
+  padding-right: 10px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+.menu-interno .navigation-interno ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+.menu-interno .navigation-interno ul li a:hover{
+  color: #ccc;
+}
+.header{
+  position: relative;
+}
+.header.banner-bg{
+  width: 100%;
+  height: 600px;
+  background-image: url('img/1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1000;
+}
+.overlay::after{
+  content: '';
+  display: block;
+  background-color: #000;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  opacity: .5;
+}
+.header .banner-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000000;
+}
+.header .banner-text p{
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+.header .banner-text h1{
+  font-size: 96px;
+  color: #fff;
+  line-height: 1.22;
+  margin-bottom: 70px;
+}
+.header .banner-text h1::after{
+  content: '';
+  display: block;
+  width: 500px;
+  height: 1px;
+  background-color: #fff;
+  margin: 5px auto;
+}
+.header .banner-text a{
+  color: #000;
+  background-color: #fff;
+  width: 200px;
+  height: 62px;
+  border-radius: 23px;
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.menu{
+  background-color: #707070;
+  padding: 5px 0;
+}
+.menu .container .row .navigation ul{
+  display: flex;
+  flex-direction: wrap;
+}
+.menu .navigation ul li{
+  padding-right: 10px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+.menu .navigation ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+.menu .navigation ul li a:hover{
+  color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blog h1{
+  text-align: center;
+  font-size: 4em;
+  color: #000;
+}
+
+.blog .article img{
+  width: 100%;
+  display: block;
 }
