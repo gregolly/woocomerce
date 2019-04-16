@@ -27,6 +27,9 @@ a{
 html, body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.unstyled-list{
+  list-style: none;
+}
 .container{
   max-width: 1200px;
   margin: 0 auto;
@@ -59,7 +62,7 @@ html, body{
 }
 .header-interno.banner-bg-interno{
   width: 100%;
-  height: 600px;
+  height: 100vh;
   background-image: url('img/1.jpg');
   background-size: cover;
   background-position: center center;
@@ -72,6 +75,7 @@ html, body{
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000000;
+  text-align: center;
 }
 .header-interno .banner-text-interno p{
   color: #fff;
@@ -85,14 +89,14 @@ html, body{
   line-height: 1.22;
   margin-bottom: 70px;
 }
-.header-interno .banner-text-interno h1::after{
+/*.header-interno .banner-text-interno h1::after{
   content: '';
   display: block;
   width: 500px;
   height: 1px;
   background-color: #fff;
   margin: 5px auto;
-}
+}*/
 .header-interno .banner-text-interno a{
   color: #000;
   background-color: #fff;
@@ -108,6 +112,7 @@ html, body{
 .menu-interno{
   background-color: #707070;
   padding: 5px 0;
+  line-height: 5;
 }
 .menu-interno .container .row .navigation-interno ul{
   display: flex;
@@ -130,7 +135,7 @@ html, body{
 }
 .header.banner-bg{
   width: 100%;
-  height: 600px;
+  height: 100vh;
   background-image: url('img/1.jpg');
   background-size: cover;
   background-position: center center;
@@ -159,6 +164,7 @@ html, body{
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000000;
+  text-align: center;
 }
 .header .banner-text p{
   color: #fff;
@@ -195,6 +201,7 @@ html, body{
 .menu{
   background-color: #707070;
   padding: 5px 0;
+  line-height: 5;
 }
 .menu .container .row .navigation ul{
   display: flex;
@@ -212,27 +219,87 @@ html, body{
 .menu .navigation ul li a:hover{
   color: #ccc;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.blog h1{
-  text-align: center;
-  font-size: 4em;
-  color: #000;
+.menu .container .row .logo img{
+  height: 80px;
+}
+.blog{
+  width: 50%;
+}
+.gallery{
+  width: 50%; 
 }
 
-.blog .article img{
-  width: 100%;
-  display: block;
+
+
+
+
+
+
+
+
+
+
+.blog-page{
+  padding: 180px 0;
+}
+.blog-page h2{
+  text-align: center;
+  font-size: 2em;
+  color: #000;
+  padding: 10px 0;
+  font-family: 'Slabo 27px', serif;
+}
+.blog-page .row .article-blog .category-blog a{
+  color: #000;
+}
+.blog-page .row .article-blog .category-blog .post-categories{
+  display: inline-block;
+  font-family: 'Slabo 27px', serif;
+  font-size: 20px;
+  line-height: 1.45;
+  color: #000000;
+}
+.blog-page .row .article-blog .date-blog{
+  width: 125px;
+  display: inline-block;
+  font-family: 'Slabo 27px', serif;
+  font-size: 20px;
+  line-height: 1.45;
+  color: #000000;
+}
+.blog-page .row .article-blog p{
+  font-family: 'roboto', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.35;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.article-blog{
+  width: 75%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 120px;
+}
+.container-sidebar{
+  width: 25%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-sidebar .unstyled-list h4{
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
+  font-family: 'Slabo 27px', serif;
+  font-size: 48px;
+  line-height: 1.25;
+}
+.container-sidebar .unstyled-list .cat-item{
+  font-family: 'Slabo 27px', serif;
+  font-size: 1.3em;
+  line-height: 1.23;
+}
+.container-sidebar .unstyled-list .cat-item a{
+  color: #000;
 }

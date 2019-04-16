@@ -13,7 +13,7 @@
 <header class="header-interno banner-bg-interno">
   <div class="overlay"></div>
   <div class="banner-text-interno">
-      <h1>Lorem Ipsum</h1>
+      <h1>Blog</h1>
   </div>
 </header>
 
