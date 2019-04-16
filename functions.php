@@ -11,6 +11,7 @@ function evento_de_bike_tema_css() {
 add_action('wp_enqueue_scripts', 'evento_de_bike_tema_scripts');
 
 function evento_de_bike_tema_scripts(){
+	wp_enqueue_script('infinite-gallery', get_template_directory_uri() . '/js/infinite-gallery.js', array(), null, true);
 	wp_enqueue_script('jquery-evento-bike', get_template_directory_uri() . '/js/jquery.js', array(), '3.4.0', true);
 }
 
@@ -54,6 +55,7 @@ add_action('init', 'evento_bike_tema_init');
 
 function evento_bike_tema_init(){
 	register_nav_menu('primary', 'Menu Principal');
+	register_nav_menu('footer', 'Menu do rodapé');
 }
 
 register_sidebar([
@@ -63,3 +65,13 @@ register_sidebar([
 	'before_title'	=> '<h4>',
 	'after_title'	=> '</h4>'
 ]);
+
+function modify_jquery() {
+	if (!is_admin()) {
+		// comment out the next two lines to load the local copy of jQuery
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, '3.3.1');
+		wp_enqueue_script('jquery');
+	}
+}
+add_action('init', 'modify_jquery');

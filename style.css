@@ -203,14 +203,17 @@ html, body{
   padding: 5px 0;
   line-height: 5;
 }
+.menu .navigation{
+  width: 50%;
+}
 .menu .container .row .navigation ul{
-  display: flex;
-  flex-direction: wrap;
+  text-align: right;
 }
 .menu .navigation ul li{
   padding-right: 10px;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
+  display: inline-block;
 }
 .menu .navigation ul li a{
   color: #fff;
@@ -218,6 +221,9 @@ html, body{
 }
 .menu .navigation ul li a:hover{
   color: #ccc;
+}
+.menu .container .row .logo{
+  width: 50%;
 }
 .menu .container .row .logo img{
   height: 80px;
@@ -245,6 +251,7 @@ html, body{
   font-family: 'Slabo 27px', serif;
   font-size: 35px;
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 .main .row .article{
   margin-bottom: 30px;
@@ -275,7 +282,7 @@ html, body{
 .main .gallery h2{
   font-family: 'Slabo 27px', serif;
   font-size: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   margin-top: 30px;
 }
 .main .gallery p{
@@ -314,9 +321,50 @@ html, body{
 .main .gallery .row .gallery-container .img-gallery-home{
   height: 250px;
 }
-
-
-
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: url('img/1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.banner .cite-banner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 100000;
+}
+.banner .cite-banner blockquote{
+  max-width: 100%;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 65px;
+  line-height: 1.13;
+  color: inherit;
+  margin-bottom: 30px;
+}
+.banner .cite-banner cite{
+  font-family: 'Slabo 27px', serif;
+  font-size: 30px;
+  line-height: 1.13;
+  color: inherit;
+}
+.banner .cite-banner cite::before{
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 8px;
+  margin-right: 5px;
+}
 
 
 

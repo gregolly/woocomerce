@@ -40,4 +40,23 @@
     </div>
   </div>
 </main>
+
+<section class="banner">
+  <div class="overlay"></div>
+  <div class="cite-banner">
+    <blockquote>"A vida é uma aventura ousada ou nada."</blockquote>
+    <cite>Helen Keller</cite>
+  </div>
+</section>
+
+<section class="testimony container">
+  <h3>Depoimentos</h3>
+  <div class="row">
+    <div class="testimony-card">
+      <img src="" alt="">
+      <p class="name-testimony"></p>
+      <p class="text-testimony"></p>
+    </div>
+  </div>
+</section>
 <?php get_footer(); ?>
