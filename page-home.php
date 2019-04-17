@@ -11,7 +11,7 @@
         $args = array( 'numberposts' => 4 );
         $myposts = get_posts( $args );
         foreach( $myposts as $post ) : setup_postdata($post); 
-    ?>
+      ?>
       <article class="article">
         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
         <h2><?php the_title(); ?></h2>
@@ -49,13 +49,61 @@
   </div>
 </section>
 
-<section class="testimony container">
-  <h3>Depoimentos</h3>
-  <div class="row">
-    <div class="testimony-card">
-      <img src="" alt="">
-      <p class="name-testimony"></p>
-      <p class="text-testimony"></p>
+<section class="testimonial">
+  <div class="container">
+    <h3>Depoimentos</h3>
+    <div class="row">
+      <div class="item-testimonial">
+        <div class="img-testimonial">
+          <img src="<?= get_template_directory_uri(); ?>/img/erika.jpg" alt="">
+        </div>
+        <div class="text-testimonial">
+          <span>Junior Silva</span>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+
+      <div class="item-testimonial">
+        <div class="img-testimonial">
+          <img src="<?= get_template_directory_uri(); ?>/img/erika.jpg" alt="">
+        </div>
+        <div class="text-testimonial">
+          <span>Junior Silva</span>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+
+      <div class="item-testimonial">
+        <div class="img-testimonial">
+          <img src="<?= get_template_directory_uri(); ?>/img/erika.jpg" alt="">
+        </div>
+        <div class="text-testimonial">
+          <span>Junior Silva</span>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+<div class="overlay"></div>
+  <div class="container">
+    <h4>entre em contato conosco!</h4>
+    <div class="row">
+      <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+      <div class="form-group">
+        <?php the_content(); ?>
+      </div>
+      <?php endwhile; else: ?>
+      <?php endif; ?>
+      <!--div class="address">
+        <ul>
+          <li>Av. Brasil, 52 - N, centro</li>
+          <li>email@email.com.br</li>
+          <li>(65) 9 9955-4455</li>
+        </ul>
+      </div-->
     </div>
   </div>
 </section>

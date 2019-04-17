@@ -11,7 +11,9 @@ function evento_de_bike_tema_css() {
 add_action('wp_enqueue_scripts', 'evento_de_bike_tema_scripts');
 
 function evento_de_bike_tema_scripts(){
-	wp_enqueue_script('infinite-gallery', get_template_directory_uri() . '/js/infinite-gallery.js', array(), null, true);
+	wp_enqueue_script('flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', array('jquery-evento-bike'), null, true);
+	wp_enqueue_script('owl-plugin', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery-evento-bike'), null, true);
+	wp_enqueue_script('carroulsel-testimonial', get_template_directory_uri() . '/js/slide-testimonial.js', array(), null, true);
 	wp_enqueue_script('jquery-evento-bike', get_template_directory_uri() . '/js/jquery.js', array(), '3.4.0', true);
 }
 

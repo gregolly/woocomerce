@@ -365,7 +365,113 @@ html, body{
   margin-bottom: 8px;
   margin-right: 5px;
 }
-
+.testimonial{
+  padding: 90px 0;
+}
+.testimonial .container h3{
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'roboto', sans-serif
+}
+.testimonial .container .row .item-testimonial{
+  flex: 1 1 33.3%;
+  max-width: calc(33.3% - 30px);
+  background: #f40c;
+  border-radius: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.testimonial .container .row .item-testimonial:hover{
+  background: #070707;
+  transition: .9s;
+}
+.testimonial .container .row .item-testimonial .img-testimonial{
+  border-radius: 50%;
+  position: relative;
+  top: -80px;
+}
+.testimonial .container .row .item-testimonial .img-testimonial > img{
+  border-radius: 50%;
+  border: 5px solid #fff;
+  height: 150px;
+  position: absolute;
+  left: 100px;
+}
+.testimonial .container .row .item-testimonial .text-testimonial{
+  padding: 95px 40px 40px 40px;
+}
+.testimonial .container .row .item-testimonial .text-testimonial span{
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+.testimonial .container .row .item-testimonial .text-testimonial p{
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.4;
+}
+.contact{
+  width: 100%;
+  height: 100vh;
+  background-image: url('img/1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.contact .container .row .form-group{
+  flex: 1 1 50%;
+  max-width: 50%;
+  z-index: 100000;
+  position: absolute;
+}
+.contact .container .row .form-group input[type="text"]{
+  width: 100%;
+  background: none;
+  border: 1px solid rgb(184, 179, 179);
+  opacity: .7;
+  padding: 5px;
+  margin-top: 10px;
+  color: #fff;
+}
+.contact .container .row .form-group input[type="email"]{
+  width: 100%;
+  background: none;
+  border: 1px solid #fff;
+  opacity: .7;
+  padding: 5px;
+  margin-top: 10px;
+  color: #fff;
+}
+.contact .container .row .form-group textarea{
+  width: 100%;
+  background: none;
+  border: 1px solid #fff;
+  opacity: .7;
+  padding: 5px;
+  margin-top: 10px;
+  color: #fff;
+}
+.contact .container .row .form-group input[type="submit"]{
+  width: 200px;
+  background: none;
+  border: 1px solid #fff;
+  opacity: .7;
+  color: #fff;
+  margin-top: 20px;
+}
+.contact .container .row .address{
+  flex: 1 1 50%;
+  max-width: 50%;
+  z-index: 1000000;
+  position: absolute;
+}
 
 
 
