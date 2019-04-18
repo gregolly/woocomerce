@@ -49,42 +49,44 @@
   </div>
 </section>
 
-<section class="testimonial">
+<!--section class="testimonial">
   <div class="container">
     <h3>Depoimentos</h3>
     <div class="row">
-      <div class="item-testimonial">
-        <div class="img-testimonial">
-          <img src="<?= get_template_directory_uri(); ?>/img/erika.jpg" alt="">
+      <div class="owl-carousel">
+        <div class="item-testimonial">
+          <div class="img-testimonial">
+            <img src="<?= get_template_directory_uri(); ?>/img/erika.jpg" alt="">
+          </div>
+          <div class="text-testimonial">
+            <span>Junior Silva</span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
         </div>
-        <div class="text-testimonial">
-          <span>Junior Silva</span>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-      </div>
 
-      <div class="item-testimonial">
-        <div class="img-testimonial">
-          <img src="<?= get_template_directory_uri(); ?>/img/erika.jpg" alt="">
+        <div class="item-testimonial">
+          <div class="img-testimonial">
+            <img src="<?= get_template_directory_uri(); ?>/img/erika.jpg" alt="">
+          </div>
+          <div class="text-testimonial">
+            <span>Junior Silva</span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
         </div>
-        <div class="text-testimonial">
-          <span>Junior Silva</span>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-      </div>
 
-      <div class="item-testimonial">
-        <div class="img-testimonial">
-          <img src="<?= get_template_directory_uri(); ?>/img/erika.jpg" alt="">
-        </div>
-        <div class="text-testimonial">
-          <span>Junior Silva</span>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <div class="item-testimonial">
+          <div class="img-testimonial">
+            <img src="<?= get_template_directory_uri(); ?>/img/erika.jpg" alt="">
+          </div>
+          <div class="text-testimonial">
+            <span>Junior Silva</span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section-->
 
 <section class="contact">
 <div class="overlay"></div>
